@@ -1,2 +1,4 @@
-# cmsi401-fall2015-presentation
-Just what the repository title says it is
+This is a reveal.js presentation.
+
+Thanks to github for hosting. As usual, check the gh-pages branch.
+
