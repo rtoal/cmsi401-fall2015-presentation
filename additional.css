@@ -26,3 +26,9 @@
 .reveal .handwriting {
   font-family: 'Short Stack', cursive;
 }
+
+.reveal .history-column {
+  font-size: 70%;
+  display: inline-block;
+  text-align: left;
+}
