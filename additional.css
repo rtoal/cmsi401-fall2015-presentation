@@ -32,3 +32,12 @@
   display: inline-block;
   text-align: left;
 }
+
+.reveal .tags {
+  margin: 5px 0 5px 2em;
+}
+
+.reveal .tags span {
+  padding: 0 5px 0 5px;
+  border: none;
+}

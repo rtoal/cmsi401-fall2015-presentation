@@ -185,15 +185,15 @@
             <tr>
               <td><img src="as.jpg" class="headshot">
               <td>Alex Schneider &bull; Security Innovation<br>
-              <small>Threat modeling presentation</small>
+              <small>Threat modeling</small>
             <tr>
               <td><img src="aa.jpg" class="headshot">
               <td>Aghyan Alzuabi &bull; Symantec<br>
-              <small>Agile and scrum presentation</small>
+              <small>Agile, scrum, and product/project management</small>
             <tr>
               <td><img src="jn.jpg" class="headshot">
               <td>Jerry Nguyen &bull; CrowdStrike<br>
-              <small>Security presentation</small>
+              <small>Security</small>
             <tr>
               <td><img src="mc.png" class="headshot">
               <td>Mark Chavira &bull; Google<br>
@@ -206,24 +206,24 @@
           <table class="tight">
             <tr>
               <td width=95><img src="mt.png" class="headshot">
-              <td>Marcelo Tallis and Benson Hon &bull; Criteo<br>
-              <small>Machine learning presentation; observe projects and give feedback</small>
               <td width=95><img src="benson.jpg" class="headshot">
+              <td>Marcelo Tallis and Benson Hon &bull; Criteo<br>
+              <small>Machine learning presentation; long discussions with students</small>
             <tr>
-              <td><img src="lm.jpg" class="headshot">
-              <td colspan="2">Laura Massa &bull; LMU<br>
+              <td><td><img src="lm.jpg" class="headshot">
+              <td>Laura Massa &bull; LMU<br>
               <small>Observe class; advise instructor on learning outcomes and assessment</small>
             <tr>
-              <td><img src="mf.jpg" class="headshot">
-              <td colspan="2">Myron Flickner &bull; IBM Research<br>
-              <small>Neuromorphic computing presentation</small>
+              <td><td><img src="mf.jpg" class="headshot">
+              <td>Myron Flickner &bull; IBM Research<br>
+              <small>Neuromorphic computing</small>
             <tr>
-              <td><img src="jn.jpg" class="headshot">
-              <td colspan="2">Jerry Nguyen &bull; CrowdStrike<br>
+              <td><td><img src="jn.jpg" class="headshot">
+              <td>Jerry Nguyen &bull; CrowdStrike<br>
               <small>Review students' threat models and give feedback</small>
             <tr>
-              <td><img src="mh.jpg" class="headshot">
-              <td colspan="2">Marc Hamilton &bull; NVIDIA
+              <td><td><img src="mh.jpg" class="headshot">
+              <td>Marc Hamilton &bull; NVIDIA
               <small>Nvidia hardware, software, company culture, and the Silicon Valley scene</small>
           </table>
         </section>
@@ -233,16 +233,17 @@
           <table>
             <tr>
               <td width=105><img src="mg.jpg" class="headshot">
-              <td>Manish Goyal and Dave Pedowitz &bull; Friendbuy<br>
-              <small>An Ask-Me-Anything about entrepreneurship, L.A. Startups, and tech</small>
               <td width=105><img src="dp.jpg" class="headshot">
+              <td>Manish Goyal and Dave Pedowitz &bull; Friendbuy<br>
+              <small>An Ask-Me-Anything about entrepreneurship, L.A. Startups, 
+              B2B, B2C, software architecture and tech</small>
             <tr>
-              <td><img src="bh.jpg" class="headshot">
-              <td colspan="2">Brian Handy &bull; Disney / USC<br>
+              <td><td><img src="bh.jpg" class="headshot">
+              <td>Brian Handy &bull; Disney / USC<br>
               <small>Game Industry presentation; feedback on projects</small>
             <tr>
-              <td><img src="aw.jpg" class="headshot">
-              <td colspan="2">Andy Won &bull; Amazon<br>
+              <td><td><img src="aw.jpg" class="headshot">
+              <td>Andy Won &bull; Amazon<br>
               <small>Brief review of projects</small>
           </table>
         </section>
@@ -337,48 +338,47 @@
           </blockquote>
         </section>
 
+        <section data-background="white">
+          <h2>Architecture</h2>
+          <div><img src="grapevine-images/architecture.png" style="box-shadow:none"></div>
+        </section>
+
         <section data-background="#eee">
+          <h2>Client API</h2>
           <img class="logo" src="coffeescript-logo.png">
-          <img class="logo" src="nodejs-logo.png">
-          <img class="logo" src="nltk-logo.png">
+          <img class="logo" src="nodejs-logo.png" style="margin-left:80px">
           <img class="logo" src="mocha-chai-sinon.png">
-          <img class="logo" src="java-logo.png">
-          <img class="logo" src="volley-logo.jpeg">
-          <img class="logo" src="swift-logo.png">
-          <img class="logo" src="alamofire-logo.png">
-          <img class="logo" src="html5-logo.png">
           <img class="logo" src="pg-logo.png">
-          <img class="logo" src="scikit-learn-logo.png">
         </section>
 
         <section>
-          <div><img src="grapevine-images/architecture.png"></div>
-        </section>
-
-        <section>
-          <h2>Our Client API</h2>
           <div><img src="grapevine-images/grapevine-apiary.png"></div>
         </section>
 
-        <section>
-          <h2>Date Processing</h2>
-          <blockquote>We look for dates in a post or tweet and treat
-          that as an event. We use <em>chrono-node</em> to extract
-          the dates and identify events.</blockquote>
+        <section data-background="#eee">
+          <h2>Semantic Processing</h2>
+          <p style="margin:2em 0 1em 0">We discover and extract events and their dates<br>from tweets and posts</p>
+          <img class="logo" src="nltk-logo.png">
+          <img class="logo" src="chrono-logo.png">
         </section>
 
         <section data-background="grapevine-images/machine-learning-bg.png">
           <h2>Machine Learning</h2>
           <img src="grapevine-images/ml-comic.png" height="150">
-          <table>
-            <tr><td>Multi-label classifier trained on 2000 pre-labeled posts</td></tr>
-            <tr><td>Categorize new posts into tags<br>
-              <center>
-              <small>entertainment, academic, community service, food, spirituality...</small>
-              </center>
-            </td></tr>
-            <tr><td>About 65% accurate</td></tr>
-          </table>
+          <img class="logo" style="margin-left:2em" src="scikit-learn-logo.png">
+          <ul>
+            <li>Multi-label classifier trained on 2000 pre-labeled posts
+            <li>Categorize new posts into tags
+              <div class="tags">
+              <span style="background-color:green">entertainment</span>
+              <span style="background-color:purple">academic</span>
+              <span style="background-color:orange">community service</span>
+              <span style="background-color:red">food</span>
+              <span style="background-color:blue">spirituality</span>
+              ...
+            </div>
+            <li>About <b>65%</b> accurate
+          </ul>
         </section>
 
         <section data-background="grapevine-images/machine-learning-bg.png">
@@ -390,8 +390,17 @@
 
         <section>
           <div>
-            <img src="ios.png" style="border:0;margin-right:4em;margin-bottom:15%">
+            <h2>iOS Client</h2>
+            <img src="ios.png" class="logo"><br>
+            <img class="logo" src="swift-logo.png">
+            <img class="logo" src="alamofire-logo.png">
+          </div>
+        </section>
+
+        <section>
+          <div>
             <img src="grapevine-images/iOsGvLogin.png" width="300">
+            <img src="grapevine-images/iOsGvFeedManagement.png" width="300">
           </div>
         </section>
 
@@ -399,7 +408,6 @@
           <div>
             <img src="grapevine-images/iOsGvEventList.png" width="300">
             <img src="grapevine-images/iOsGvEventDetail.png" width="300">
-            <img src="grapevine-images/iOsGvFeedManagement.png" width="300">
           </div>
         </section>
 
@@ -410,48 +418,30 @@
           </div>
         </section>
 
-        <section>
+        <section data-background="#f3fff3">
           <div>
-            <img class="logo" src="grapevine-images/android-v-apple.png"
-              style="margin-bottom:20%;margin-right:2em" width="200">
-            <img src="grapevine-images/android-intro.png" width="300">
-            <img src="grapevine-images/grapevine-login-android.png" width="300">
+            <h2>Android Client</h2>
+            <img class="logo" src="grapevine-images/android-v-apple.png" width="100"><br>
+            <img class="logo" src="java-logo.png" style="margin-right:4em">
+            <img class="logo" src="volley-logo.jpeg">
+            <img class="logo" src="caldroid-logo.png">
           </div>
         </section>
 
         <section>
           <div>
-            <img src="grapevine-images/android-calendar-view.png" width="300">
-            <img src="grapevine-images/android-filtered-calendar-view.png" width="300">
-            <img src="grapevine-images/android-event-view.png" width="300">
+            <img src="grapevine-images/android-intro.png" width="300">
+            <img src="grapevine-images/grapevine-login-android.png" width="300">
+            <img src="grapevine-images/android-manage-feeds.png" width="300">
           </div>
         </section>
 
          <section>
           <div>
-            <img src="grapevine-images/android-manage-feeds.png" width="300">
+            <img src="grapevine-images/android-event-view.png" width="300">
+            <img src="grapevine-images/android-calendar-view.png" width="300">
+            <img src="grapevine-images/android-filtered-calendar-view.png" width="300">
           </div>
-        </section>
-
-        <section>
-          <h2>Technologies</h2>
-          <div>
-            <ul>
-              <li>
-                Android SDK
-              </li>
-              <li>
-                Volley - HTTP requests
-              </li>
-              <li>
-                Caldroid - calendar package
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <h2>Future Work</h2>
         </section>
 
         <section data-background="marvin-gaye.jpg">
@@ -634,6 +624,8 @@
 
         <section>
           <h3>Webapp</h3>
+                    <img class="logo" src="html5-logo.png">
+
           <p>Online leaderboard</p>
           <p>User Profiles</p>
         </section>
