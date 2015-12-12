@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Short+Stack);
+@import url(https://fonts.googleapis.com/css?family=Caveat+Brush);
 
 .reveal img.headshot {
   margin-bottom: 0;
@@ -24,7 +24,7 @@
 }
 
 .reveal .handwriting {
-  font-family: 'Short Stack', cursive;
+  font-family: 'Caveat Brush', cursive;
 }
 
 .reveal .history-column {
