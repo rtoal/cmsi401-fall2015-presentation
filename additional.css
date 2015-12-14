@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Short+Stack);
+@import url(https://fonts.googleapis.com/css?family=Caveat);
 
 .reveal img.headshot {
   margin-bottom: 0;
@@ -24,11 +24,27 @@
 }
 
 .reveal .handwriting {
-  font-family: 'Short Stack', cursive;
+  font-family: 'Caveat', cursive;
 }
 
 .reveal .history-column {
   font-size: 70%;
   display: inline-block;
   text-align: left;
+}
+
+.reveal .tags {
+  margin: 5px 0 5px 2em;
+  line-height: 1.5em;
+}
+
+.reveal .tags span {
+  padding: 0 10px 0px 10px;
+  border-radius: 12px;
+  margin-right: 6px;
+  border: none;
+}
+
+.reveal .logos img {
+  vertical-align: middle;
 }
