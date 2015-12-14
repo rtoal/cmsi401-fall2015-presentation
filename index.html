@@ -687,18 +687,6 @@
           { src: 'plugin/notes/notes.js', async: true }
         ]
       });
-      Reveal.addEventListener( 'fragmentshown', function( event ) {
-          var audio = event.fragment.querySelector( 'audio' );
-           if( audio ) {
-            audio.play();
-          }
-        } );
-        Reveal.addEventListener( 'fragmenthidden', function( event ) {
-          var audio = event.fragment.querySelector( 'audio' );
-           if( audio ) {
-            audio.pause();
-          }
-        } );
     </script>
   </body>
 </html>
