@@ -672,9 +672,15 @@
 
         <section>
           <h3>API</h3>
-          <p>List the endpoints here I guess</p>
+          <p>Simple - only for the game to interact with the leaderboard</p>
+          <p>HTTP Basic-Auth to request an auth token for posting scores</p>
+          <p>XML &#x2639;</p>
         </section>
 
+        <section>
+          <h3>Internationalization (i18n)</h3>
+          <p>We have support for English, Spanish, Russian, and Arabic</p>
+        </section>
         <!-- TODO: actual screen-shots, once design is done -->
         <section>
           Leaderboard in English screenshot
@@ -691,7 +697,10 @@
         <!-- TODO: security -->
         <section data-background="anon.jpg" style="color:black">
           <h2 style="color:black">Security</h2>
-          <p>Overview of security features in general...</p>
+          <p>Strong hashing on sensitive data storage (passwords, etc)</p>
+          <p>Escaping all user input to prevent XSS</p>
+          <p>CSRF synchronizer tokens</p>
+          <p>SSL and related features (HSTS, HPKP)</p>
         </section>
 
         <section data-background="#411">
@@ -700,9 +709,9 @@
           <div>
             <ul>
               <img style="float:right;border:none;margin-left:20px;box-shadow:none" src="blackhat.png">
-              <li>Identify potential problems and sensitive information
-              <li>Determine how application is meant to be used
-              <li>Ensure software is written to actively defend against threats
+              <li>Identify potential problems and sensitive information</li>
+              <li>Determine how application is meant to be used</li>
+              <li>Ensure software is written to actively defend against threats</li>
             </ul>
           </div>
           <hr style="clear:both">
