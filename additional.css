@@ -44,3 +44,11 @@
   margin-right: 6px;
   border: none;
 }
+
+.reveal .logos img {
+  vertical-align: middle;
+}
+
+.reveal .side-by-side img:first-child {
+  margin-right: 3em;
+}

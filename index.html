@@ -297,19 +297,23 @@
           </ul>
         </section>
 
-        <section data-background="anon.jpg" style="color:black">
-          <h2 style="color:black">Writing</h2>
-          <p style="margin-top:1.5em;color:black">Threat Models! (Microsoft SDL-style)</p>
-          <div>
-          <ul style="margin-top:0.25">
-            <img style="float:right;border:none;box-shadow:none" src="blackhat.png">
-            <li>Identify potential problems and sensitive information
-            <li>Determine how application is meant to be used
-            <li>Ensure software is written to actively defend against threats
+        <section data-background="white">
+          <h2>Writing</h2>
+          <ul>
+            <li>READMEs
+            <li>Wiki
+              <ul>
+                <li>Project Descriptions, Goals, ...
+                <li>Brainstorming, Designs, Proposals
+                <li>Meeting Notes
+                <li>Threat Models (more on this later)
+              </ul>
+            <li>Agile Board
+              <ul>
+                <li>Epics and User Stories
+              </ul>
           </ul>
-          <div>
-          <hr style="clear:both">
-          <p style="clear:both">Reviewed by industry professionals (thanks CrowdStrike!)</p>
+          <img src="writing.png" style="box-shadow:none">
         </section>
 
         <section>
@@ -346,54 +350,52 @@
 
         <section data-background="#eee">
           <h2>Semantic Processing</h2>
-          <p style="margin:2em 0 1em 0">We discover and extract events and their dates<br>from tweets and posts</p>
-          <img class="logo" src="nltk-logo.png">
+          <img class="logo" src="python.png" style="margin-right:1.3em">
+          <img class="logo" src="scikit-learn-logo.png" style="margin-right:1.3em">
+          <img class="logo" src="flask.png"><br>
+          <img class="logo" src="grapevine-images/nltk.png"><br>
           <img class="logo" src="chrono-logo.png">
         </section>
 
-        <section data-background="#eee">
-          <h2>Semantic Processing</h2>
-          <p>We examine a post Facebook and determine whether or not it is an event.</p>
+        <section data-background="grapevine-images/machine-learning-bg.png" data-transition="fade">
+          <h3>Date Extraction</h3>
+          <p>We parse tweets and posts...</p>
           <img src="grapevine-images/frozen-fb-post-cropped.png">
         </section>
 
-        <section data-background="#eee">
-          <h2>Semantic Processing</h2>
-          <p>If there is a date in the text, it is an event.</p>
+        <section data-background="grapevine-images/machine-learning-bg.png" data-transition="fade">
+          <h3>Date Extraction</h3>
+          <p>...if we find a date, we have an event.</p>
           <img src="grapevine-images/frozen-fb-post-faded-cropped.png">
         </section>
 
-        <section data-background="#eee">
-          <h2>Semantic Processing</h2>
-          <p>Once an event has been identified <br>we add more information such as:</p>
+        <section data-background="grapevine-images/machine-learning-bg.png" data-transition="fade">
+          <h3>Events</h3>
+          <p style="margin-top:1.3em">Once an event has been identified,<br>we add more information, such as:</p>
           <ul>
-            <li> Start and End Time
-            <li> Author
-            <li> Text from Original Post
-            <li> Link To Original Post
+            <li>Start time
+            <li>End time, if known
+            <li>Author
+            <li>Text from original post
+            <li>Link to original post
           </ul>
         </section>
 
-        <section data-background="grapevine-images/machine-learning-bg.png">
-          <h2>Machine Learning</h2>
+        <section data-background="grapevine-images/machine-learning-bg.png" data-transition="fade">
+          <h3>Categorizing Events</h3>
           <img src="grapevine-images/ml-comic.png" height="150">
-          <img class="logo" style="margin-left:2em" src="scikit-learn-logo.png">
-          <ul>
-            <li>Multi-label classifier trained on 2000 pre-labeled posts
-            <li>Categorize new posts into tags
-              <div class="tags">
-              <span style="background-color:green">entertainment</span>
-              <span style="background-color:purple">academic</span>
-              <span style="background-color:orange">community service</span>
-              <span style="background-color:red">food</span>
-              <span style="background-color:blue">spirituality</span>
-              ...
-            </div>
-          </ul>
+          <p>Multi-label classifier trained on 2000 pre-labeled posts</p>
+          <div class="tags">
+          <span style="background-color:green">entertainment</span>
+          <span style="background-color:purple">academic</span>
+          <span style="background-color:orange">community service</span>
+          <span style="background-color:red">food</span>
+          <span style="background-color:blue">spirituality</span>
+          ...
+        </div>
         </section>
 
-        <section data-background="grapevine-images/machine-learning-bg.png">
-          <h2>Machine Learning Model</h2>
+        <section data-background="grapevine-images/machine-learning-bg.png" data-transition="fade">
           <div>
             <img src="grapevine-images/machine-learning-diagram.png" style="background:none; border:none; box-shadow:none;" height="550">
           </div>
@@ -401,79 +403,112 @@
 
         <section data-background="#eee">
           <h2>Client API</h2>
-          <img class="logo" src="coffeescript-logo.png">
-          <img class="logo" src="nodejs-logo.png" style="margin-left:80px">
-          <img class="logo" src="mocha-chai-sinon.png">
-          <img class="logo" src="pg-logo.png">
+          <p class="logos">
+            <img class="logo" src="coffeescript-logo.png">
+            <img class="logo" src="nodejs-logo.png">
+            <img class="logo" src="lodash-logo.png">
+            <img class="logo" src="pg-logo.png">
+            <img class="logo" src="jwt-logo.png">
+            <img class="logo" src="mocha-chai-sinon.png">
+          </p>
         </section>
 
         <section>
+          <div>http://docs.grapevineapi.apiary.io/#</div>
           <div><img src="grapevine-images/grapevine-apiary.png"></div>
         </section>
 
-        <section>
-          <div>
-            <h2>iOS Client</h2>
-            <img src="ios.png" class="logo"><br>
-            <img class="logo" src="swift-logo.png">
-            <img class="logo" src="alamofire-logo.png">
-          </div>
+        <section data-background="#eff">
+          <h2>Mobile Clients</h2>
+          <table width="100%">
+            <tr style="text-align:center">
+              <th style="border-right:2px solid black;text-align:center"
+                  width="50%"><img src="ios.png" height=64 class="logo">
+              <td style="text-align:center"><img class="logo" src="grapevine-images/android-v-apple.png" height="64">
+            <tr>
+              <td style="border-right:2px solid black">
+                <img class="logo" src="swift-logo.png">
+                <img class="logo" src="alamofire-logo.png">
+              <td>
+                <img class="logo" src="java-logo.png">
+                <img class="logo" src="volley-logo.jpeg">
+                <img class="logo" src="caldroid-logo.png">
+          </table>
         </section>
 
-        <section>
-          <div>
-            <img src="grapevine-images/iOsGvLogin.png" width="300">
-            <img src="grapevine-images/iOsGvFeedManagement.png" width="300">
-          </div>
-        </section>
-
-        <section>
-          <div>
-            <img src="grapevine-images/iOsGvEventList.png" width="300">
-            <img src="grapevine-images/iOsGvEventDetail.png" width="300">
-          </div>
-        </section>
-
-        <section>
-          <div>
-            <img src="grapevine-images/iOsGvCalendar.png" width="300">
-            <img src="grapevine-images/iOsGvCalendarWeek.png" width="300">
-          </div>
-        </section>
-
-        <section data-background="#f3fff3">
-          <div>
-            <h2>Android Client</h2>
-            <img class="logo" src="grapevine-images/android-v-apple.png" width="100"><br>
-            <img class="logo" src="java-logo.png" style="margin-right:4em">
-            <img class="logo" src="volley-logo.jpeg">
-            <img class="logo" src="caldroid-logo.png">
-          </div>
-        </section>
-
-        <section>
-          <div>
+        <section data-transition="fade">
+          <h3>Apps</h3>
+          <div class="side-by-side">
+            <img src="grapevine-images/iOsHomeScreen.png" width="300">
             <img src="grapevine-images/android-intro.png" width="300">
+          </div>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Time to Open it Up</h3>
+          <div>
+            <img src="grapevine-images/iOsGvLaunchScreen.png" width="300">
+          </div>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Login Screen</h3>
+          <div class="side-by-side">
+            <img src="grapevine-images/iOsLogin.png" width="300">
             <img src="grapevine-images/grapevine-login-android.png" width="300">
+          </div>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Feed Management</h3>
+          <div class="side-by-side">
+            <img src="grapevine-images/iOsFeedManagement.png" width="300">
             <img src="grapevine-images/android-manage-feeds.png" width="300">
           </div>
         </section>
 
-         <section>
+        <section data-transition="fade">
+          <h3>Loading</h3>
           <div>
+            <img src="grapevine-images/iOsLoadingEvents.png" width="300">
+          </div>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Event List</h3>
+          <div class="side-by-side">
+            <img src="grapevine-images/iOsEventList.png" width="300">
+            <img src="grapevine-images/android-event-list.png" width="300">
+          </div>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Event Detail</h3>
+          <div class="side-by-side">
+            <img src="grapevine-images/iOsEventDetail.png" width="300">
             <img src="grapevine-images/android-event-view.png" width="300">
+          </div>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Calendars (Month)</h3>
+          <div class="side-by-side">
+            <img src="grapevine-images/iOsCalendarView.png" width="300">
             <img src="grapevine-images/android-calendar-view.png" width="300">
+          </div>
+        </section>
+
+        <section data-transition="fade">
+          <h3>Calendars (Week / Filtered)</h3>
+          <div class="side-by-side">
+            <img src="grapevine-images/iOsCalendarWeekView.png" width="300">
             <img src="grapevine-images/android-filtered-calendar-view.png" width="300">
           </div>
         </section>
 
         <section data-background="marvin-gaye.jpg">
           <h2>Thanks</h2>
-          <ul>
-            <li style="margin-top:1em">http://play.google.com/......
-            <li style="margin-top:1em">https://github.com/lmucs/grapevine
-            <li style="margin-top:1em">http://docs.grapevineapi.apiary.io/#
-          </ul>
+          <p style="margin-top:2em">https://github.com/lmucs/grapevine</p>
         </section>
 
 
@@ -599,9 +634,9 @@
         </section>
 
         <section data-background="colosseum.jpg">
-          <h3>Coliseo</h3>
-          <p>An Oculus Rift fighting simulator built in Unity</p>
-          <p>Online Node.js leaderbord server</p>
+          <h2>Coliseo is...</h2>
+          <p>...an Oculus Rift fighting simulator built in Unity</p>
+          <p>Plus a companion Leaderboard web application</p>
         </section>
 
         <section>
@@ -616,7 +651,7 @@
         </section>
 
         <section>
-          <h3>Other input controlls</h3>
+          <h3>Interaction</h3>
           <p>Xbox One controller</p>
           <p>Mouse and keyboard</p>
         </section>
@@ -639,19 +674,58 @@
           <p>Chose over Unreal because of better Occulus support</p>
         </section>
 
+        <section data-background="#eee">
+          <h3>Webapp</h3>
+          <img class="logo" src="nodejs-logo.png">
+          <img class="logo" src="babel-logo.png">
+          <img class="logo" src="moment-logo.png">
+          <br>
+          <img class="logo" src="lodash-logo.png">
+          <img class="logo" src="sqlite-logo.gif">
+          <img class="logo" src="sequelize-logo.png">
+          <img class="logo" src="nodemon-logo.png">
+          <hr>
+          <img class="logo" src="html5-logo.png">
+          <img class="logo" src="handlebars-logo.png">
+        </section>
+
         <section>
           <h3>API</h3>
-          <p>Node.js with Babel</p>
-          <p>Endpoints</p>
+          <p><code>GET /</code>
         </section>
 
         <section>
-          <h3>Webapp</h3>
-                    <img class="logo" src="html5-logo.png">
-
-          <p>Online leaderboard</p>
-          <p>User Profiles</p>
+          Leaderboard in English screenshot
         </section>
+
+        <section>
+          Leaderboard in Arabic screenshot
+        </section>
+
+        <section>
+          User Profile screenshot
+        </section>
+
+        <section data-background="anon.jpg" style="color:black">
+          <h2 style="color:black">Security</h2>
+          <p>Overview of security features in general...</p>
+        </section>
+
+        <section data-background="#411">
+          <h2>Threat Modeling</h2>
+          <small style="margin-top:-1em">Microsoft SDL (STRIDE/DREAD)</small>
+          <div>
+            <ul>
+              <img style="float:right;border:none;margin-left:20px;box-shadow:none" src="blackhat.png">
+              <li>Identify potential problems and sensitive information
+              <li>Determine how application is meant to be used
+              <li>Ensure software is written to actively defend against threats
+            </ul>
+          </div>
+          <hr style="clear:both">
+          <p style="clear:both">Reviewed by industry professionals (thanks CrowdStrike!)</p>
+        </section>
+
 
         <section>
           <h2>Thanks</h2>
