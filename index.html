@@ -325,7 +325,8 @@
           <div><img class="logo" src="grapevine-images/grapevine.png"></div>
           <div><i>Nicole Anguiano &bull; Cameron Billingham &bull; Juan Carrillo </i></div>
           <div><i>Jeff Fennell &bull; Matt Flickner &bull; Joaqu&iacute;n Loustau &bull; Rachel Rivera
-          </i></div>
+          </i></div></p>
+          <audio data-autoplay src="grapevine-images/grapevine-intro1.mp3">
         </section>
 
         <section data-background="grapevine-images/grapes.jpg">
@@ -341,14 +342,6 @@
         <section data-background="white">
           <h2>Architecture</h2>
           <div><img src="grapevine-images/architecture.png" style="box-shadow:none"></div>
-        </section>
-
-        <section data-background="#eee">
-          <h2>Client API</h2>
-          <img class="logo" src="coffeescript-logo.png">
-          <img class="logo" src="nodejs-logo.png" style="margin-left:80px">
-          <img class="logo" src="mocha-chai-sinon.png">
-          <img class="logo" src="pg-logo.png">
         </section>
 
         <section>
@@ -400,7 +393,6 @@
               <span style="background-color:blue">spirituality</span>
               ...
             </div>
-            <li>About <b>65%</b> accurate
           </ul>
         </section>
 
@@ -409,6 +401,14 @@
           <div>
             <img src="grapevine-images/machine-learning-diagram.png" style="background:none; border:none; box-shadow:none;" height="550">
           </div>
+        </section>
+
+        <section data-background="#eee">
+          <h2>Client API</h2>
+          <img class="logo" src="coffeescript-logo.png">
+          <img class="logo" src="nodejs-logo.png" style="margin-left:80px">
+          <img class="logo" src="mocha-chai-sinon.png">
+          <img class="logo" src="pg-logo.png">
         </section>
 
         <section>
@@ -687,6 +687,18 @@
           { src: 'plugin/notes/notes.js', async: true }
         ]
       });
+      Reveal.addEventListener( 'fragmentshown', function( event ) {
+          var audio = event.fragment.querySelector( 'audio' );
+           if( audio ) {
+            audio.play();
+          }
+        } );
+        Reveal.addEventListener( 'fragmenthidden', function( event ) {
+          var audio = event.fragment.querySelector( 'audio' );
+           if( audio ) {
+            audio.pause();
+          }
+        } );
     </script>
   </body>
 </html>
